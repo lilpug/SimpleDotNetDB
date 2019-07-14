@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="SQLServerWrapper\**" />
+    <EmbeddedResource Remove="SQLServerWrapper\**" />
+    <None Remove="SQLServerWrapper\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleDotNetDB.Core.Business\SimpleDotNetDB.Core.Business.csproj" />
+  </ItemGroup>
+
+</Project>
