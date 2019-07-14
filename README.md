@@ -4,6 +4,7 @@ This library allows SQL Server and MySQL queries/stored procedures to be run qui
 
 ## MySQL.Data
 The SimpleDotNetDB.MySQL version of this library uses the MySql.data.dll connector in order to create its functionality with MySql databases. The MySql connector is available on Nuget from https://www.nuget.org/packages/MySql.Data/. 
+
 The connector is used in the SimpleDotNetDB.MySQL library under the FOSS exception Licenses 1.0 due to this library being licensed under MIT which is part of the OSI-approved licenses, please see the MySql notice for further information.
 
 
