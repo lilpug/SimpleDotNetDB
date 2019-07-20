@@ -109,7 +109,7 @@ namespace SimpleDotNetDB.Core.Business
             if (!string.IsNullOrWhiteSpace(sql))
             {   
                 //Pulls out the parameters                
-                bindingIndexs = BindingRegex.Matches(sql).Cast<Match>().Select(s => s.Groups[1].Value).ToList();   
+                bindingIndexs = BindingRegex.Matches(sql).Cast<Match>().Select(s => s.Groups[1].Value).Distinct().ToList();   
             }
 
             //Gets all the properties supplied
